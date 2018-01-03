@@ -4,12 +4,13 @@ The code for our WWW2018 paper "Large-Scale Hierarchical Text Classification wit
 
 Readers are welcomed to fork this repository to reproduce the experiments and follow our work. Just remmeber to cite our paper
 
-@inproceedings{zhao2017meta,
-title={Large-Scale Hierarchical Text Classification with Recursively Regularized Deep Graph-CNN},
-author={Peng, Hao and Li, Jianxin and He, Yu and Liu, Yaopeng and Bao, Mengjiao and Song, Yangqiu and Yang, Qiang},
-booktitle={WWW},
-year={2018}
-}
+    @inproceedings{peng2018deepgraphcnn,
+    title={Large-Scale Hierarchical Text Classification with Recursively Regularized Deep Graph-CNN},
+    author={Peng, Hao and Li, Jianxin and He, Yu and Liu, Yaopeng and Bao, Mengjiao and Song, Yangqiu and Yang, Qiang},
+    booktitle={WWW},
+    year={2018}
+    }
+
 
 ## Requirements
 - Python 3
