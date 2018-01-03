@@ -35,7 +35,6 @@ tf.app.flags.DEFINE_boolean('log_device_placement', False,
 
 
 
-# 生成测试数据的索引文件
 def generate_eval_index():
     test_index_array = []
     # filepath = os.path.join(graphcnn_option.DATA_PATH, graphcnn_option.HIER_DIR_NAME)
@@ -57,7 +56,7 @@ def generate_eval_index():
     #     child = os.path.join(filepath, allDir)
     #     os.remove(child)
 
-    # 将索引文件写到hier_eval文件夹下
+
     filename = os.path.join(FLAGS.eval_dir, 'log_eval_for_hier_eval_index')
     np.savetxt(filename,test_index_array,fmt='%d')
 
