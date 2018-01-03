@@ -438,7 +438,6 @@ def main(argv=None):  # pylint: disable=unused-argument
                                                     ont_hot=True,
                                                     index_mode=True)
 
-    # 可以通过调用train data来用train数据进行测试：
     # evalDataSet = graphcnn_input.generate_train_data(graphcnn_option.EVAL_DATA_DIR,
     #                                                  shuffled = False,
     #                                                  ont_hot=True,
