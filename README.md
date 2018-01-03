@@ -16,3 +16,10 @@ Readers are welcomed to fork this repository to reproduce the experiments and fo
 - Python 3
 - Tensorflow > 0.8
 - Numpy
+
+
+
+
+Train:
+graphcnn_train.py
+
