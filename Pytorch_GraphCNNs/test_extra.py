@@ -1,9 +1,3 @@
-"""
-Dynamic Routing Between Capsules
-https://arxiv.org/abs/1710.09829
-
-PyTorch implementation by Kenta Iwasaki @ Gram.AI.
-"""
 import sys
 sys.setrecursionlimit(15000)
 
@@ -22,9 +16,9 @@ GPU = True
 load =False
 
 
-class CapsuleNet(nn.Module):
+class Net(nn.Module):
     def __init__(self):
-        super(CapsuleNet, self).__init__()
+        super(Net, self).__init__()
         #   96,10,50
         self.conv1 = nn.Conv2d(in_channels=50, out_channels=64, kernel_size=3, stride=1)
         #   94  8 64
@@ -150,7 +144,7 @@ if __name__ == "__main__":
 
     
 
-    model = CapsuleNet()
+    model = Net()
     engine = Engine()
     meter_loss = tnt.meter.AverageValueMeter()    
     mymeter = Mymeter(NUM_CLASSES)

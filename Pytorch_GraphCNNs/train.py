@@ -1,9 +1,3 @@
-"""
-Dynamic Routing Between Capsules
-https://arxiv.org/abs/1710.09829
-
-PyTorch implementation by Kenta Iwasaki @ Gram.AI.
-"""
 import sys
 sys.setrecursionlimit(15000)
 
@@ -23,9 +17,9 @@ GPU = True
 load =False
 
 
-class CapsuleNet(nn.Module):
+class Net(nn.Module):
     def __init__(self):
-        super(CapsuleNet, self).__init__()
+        super(Net, self).__init__()
         #   96,10,50
         self.conv1 = nn.Conv2d(in_channels=50, out_channels=64, kernel_size=3, stride=1)
         #   94  8 64
@@ -146,7 +140,7 @@ if __name__ == "__main__":
     with open('/home/LAB/penghao/mars/metadata/heiring.json','r') as f:
         heir = json.load(f)
     
-    model = CapsuleNet()
+    model = Net()
    # model.load_state_dict(torch.load('epochs/epoch_40.pt'))
     if load :
         saved_state = torch.load('epochs/epoch_49.pt')
